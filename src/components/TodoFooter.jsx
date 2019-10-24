@@ -15,9 +15,15 @@ function TodoFooter(props) {
 
     return <div>
         <hr />
-        <button type="button" onClick={() => displayClick('all')}>显示全部</button>
-        <button type="button" onClick={() => displayClick('complete')}>已完成</button>
-        <button type="button" onClick={() => displayClick('uncomplete')}>未完成</button>
+        <button 
+            type="button"
+            onClick={() => displayClick('all')}>显示全部</button>
+        <button 
+            type="button"
+            onClick={() => displayClick('complete')}>已完成</button>
+        <button 
+            type="button"
+            onClick={() => displayClick('uncomplete')}>未完成</button>
     </div>
 }
 

@@ -6,7 +6,7 @@ import { TOGGLE_COMPLETE, ADD_TODO, DEL_TODO, FILTER_DISPLAY } from '../store/ac
 function TodoList(props) {
 
     let state = useSelector((state) => state);
-    let newTodoInput = useRef(null);
+
     let dispatch = useDispatch();
 
     /**
@@ -18,20 +18,6 @@ function TodoList(props) {
             type: TOGGLE_COMPLETE, payload: {
                 id: target.dataset.id,
                 isComplete: target.checked
-            }
-        });
-    }
-
-    /**
-     * 添加按钮事件
-     */
-    function addClick(e) {
-        let title = newTodoInput.current.value;
-        dispatch({
-            type: ADD_TODO, payload: {
-                id: ~~(Math.random() * 1000000),
-                title,
-                isComplete: false
             }
         });
     }
@@ -75,10 +61,6 @@ function TodoList(props) {
     }
 
     return <div>
-        <div>
-            <input type="text" ref={newTodoInput} />
-            <button type="button" onClick={addClick}>添加</button>
-        </div>
         <hr />
         <ul>
             {renderList(state.todos, state.display)}

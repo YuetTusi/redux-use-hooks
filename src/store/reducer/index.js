@@ -5,17 +5,17 @@ let initState = {
     todos: [
         {
             id: ~~(Math.random() * 1000000),
-            title: 'React',
+            title: '学习React',
             isComplete: true
         },
         {
             id: ~~(Math.random() * 1000000),
-            title: 'Node',
+            title: '学习Node',
             isComplete: false
         },
         {
             id: ~~(Math.random() * 1000000),
-            title: 'Hooks',
+            title: '学习Hooks',
             isComplete: false
         }
     ]

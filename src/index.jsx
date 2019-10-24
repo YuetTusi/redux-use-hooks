@@ -7,13 +7,13 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 function Index(props) {
-    return <div>
+    return <>
         <Provider store={store}>
             <TodoHeader />
             <TodoList />
             <TodoFooter />
         </Provider>
-    </div>;
+    </>;
 }
 
 ReactDOM.render(<Index />, document.querySelector('#root'));

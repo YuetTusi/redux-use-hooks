@@ -1,5 +1,5 @@
 {
-  "name": "todo-hooks",
+  "name": "redux-use-hooks",
   "version": "1.0.0",
   "description": "Redux hooks版TODO",
   "main": "index.js",
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
     "@babel/runtime": "^7.6.3",
